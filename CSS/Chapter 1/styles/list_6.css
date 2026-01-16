@@ -1,0 +1,14 @@
+.list1{
+    /* can style li's disc is default */
+    list-style-type: disc;
+
+    /* inside and ouside just move right or left side */
+    list-style-position: inside;
+
+    list-style-image: url(../images/images.png);
+
+    /* shorthand */
+    /* type or position only any two */
+    list-style: circle outside;
+    
+}

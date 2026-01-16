@@ -6,9 +6,22 @@
     background-color: cyan;
     margin: 10px;
 
-    /* 10px top bottom 20px right and left */
+    /* 10px top bottom 20px right and left if there are three values to right bottom and second value will be same left*/
     margin: 10px 20px;
 
+    margin-bottom: 20px;
+
+    /* center the div */
+    margin:auto;
+
+    /* content-box and border-box */
+    /* content size will become smaller and gets the values to padding and border */
+    box-sizing: border-box;
+
+    display: inline;
+
+    /* a technique to take space between two div when they are inline block gives default space so to take that use negative margins */
+    margin-right: -4px;
     
 }
 
@@ -16,9 +29,35 @@
     width: 400px;
     height: 100px;
     background-color: blueviolet;
+    margin-top: 20px;
+
+    /* block elements collab does not add up space and higher value will be choosen and inline element will add the space does not collab */
+
+    /* width and height cannot change in inline takes only content space */
+    display: inline;
+
+    /* inline-block will allow width and height */
 }
 
 #para1{
     border: 1px black solid;
+    padding: 20px;
+    display: inline-block;
 }
 
+#para2{
+    border: 1px black solid;
+    padding: 20px;
+    display: inline-block;
+    /* brings content to start from begining */
+    vertical-align: top;
+
+    /* minimum width length */
+    min-width: 190px;
+}
+
+/* box model --> content padding and border margin is not in box model */
+
+#sp1{
+    display: block;
+}

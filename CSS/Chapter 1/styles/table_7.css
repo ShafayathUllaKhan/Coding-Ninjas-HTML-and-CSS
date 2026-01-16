@@ -1,0 +1,34 @@
+table{
+    border: 2px solid black;
+}
+
+th{
+    border: 2px solid black;
+}
+
+/* multiple tags styleing */
+
+table , th,td{
+    border: 2px solid black;
+}
+
+table{
+    /* saprate is default */
+    border-collapse: collapse;
+    width: 50%;
+    background-color: beige;
+    text-align: center;
+}
+
+th{
+    height: 40px;
+}
+
+a{
+    /* outline does not take any pixes or space it just look on computer */
+    outline: 1px solid red;
+    background-color: aquamarine;
+    padding: 5px;
+    text-decoration: none;
+    cursor: progress;
+}
