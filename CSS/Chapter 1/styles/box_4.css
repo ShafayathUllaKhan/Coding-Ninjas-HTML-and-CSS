@@ -1,0 +1,41 @@
+#outer{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+#inner{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    /* border properties */
+    border-width: 2px;
+    border-color: blue;
+    border-style: solid;
+
+    /* border shorthand */
+    border: 2px black solid;
+
+    /* border left this will design one part  */
+    border-left: 10px green dotted;
+
+    /* adjust border corners */
+    border-radius: 100px;
+
+    /* 20px tl and br 40px tr and bl */
+    border-radius: 20px 40px;
+    
+                   /* tl tr bl br */
+    border-radius: 20px 40px 20px 40px;
+
+    /*             20px tl 40px tr/bl 20px br */
+    border-radius: 20px 40px 20px;
+
+    /* in ellipse border */
+    border-radius: 20px/40px;
+
+    /* particular angle shapping */
+    border-top-right-radius: 100px;
+
+    
+}

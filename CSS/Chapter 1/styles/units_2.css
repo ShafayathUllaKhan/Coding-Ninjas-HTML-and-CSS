@@ -1,0 +1,60 @@
+/* absolute */
+div{
+    background-color: blueviolet;
+    width:3cm;
+    height: 3cm;
+}
+
+/* relative */
+div{
+    background-color: blueviolet;
+    /* width is 50% percent of the body */
+    /* % is dependent on parent */
+    /* em is dependent on parents font size */
+    /* html size is 16 px and body is 16 px */
+    /* 1 em = 16px and changes as parent font size */
+    width:50%;
+    height: 3cm;
+
+    /* em */
+    width:2em;
+    height: 4em;
+
+    /* rem is dependent on the root */
+    width:2rem;
+    height: 4rem;
+
+    /* vw whatever the size you are seeing in browser is the view port view port width and vh view port height */
+    width: 80vw;
+    height: 80vh;
+    
+    /* background-image: url(../images/images.png); */
+    /* repeat-x repear-y no-repeat */
+    /* /* background-repeat: no-repeat; */
+    background-position: center; 
+    /* cover is one single image and contain will repeat  */
+    /* background-size: contain; */
+
+    /* default is scrolled and fixed you should add */
+    /* background-attachment: fixed;    */
+    
+    /* can add multiple background-image */
+    background-image: url(../images/images.png), url(../images/bhavana.png);
+
+    /* 140 colors are there which is named */
+    /* this named color */
+    color : red;
+
+    /* hex code base 16  # first 2 number red second two green and thrid two number blue if all 0 black color and all is f it will be white color */
+
+    /* rgb function
+    color : rgb(0-255,0-255,0-255); */
+
+    /* rgba function opacity 0 to 1 */
+    /* color : rgb(0-255,0-255,0-255,0-1); */
+
+    /* hsl = hui saturation lightness */
+
+    /* hsla */
+}
+

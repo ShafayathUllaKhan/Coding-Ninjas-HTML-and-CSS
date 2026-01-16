@@ -1,0 +1,24 @@
+/* p tag comes with defualt property like margin div will not have any default properties */
+
+#div1{
+    width: 400px;
+    height: 100px;
+    background-color: cyan;
+    margin: 10px;
+
+    /* 10px top bottom 20px right and left */
+    margin: 10px 20px;
+
+    
+}
+
+#div2{
+    width: 400px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+#para1{
+    border: 1px black solid;
+}
+

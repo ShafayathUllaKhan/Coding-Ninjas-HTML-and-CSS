@@ -1,0 +1,17 @@
+#outer{
+    background-color: rgb(255,0,0,0.5);
+    width: 100vw;
+    height:100vh;
+}
+
+#inner{
+    width: 50%;
+    height: 50%;
+    /* hex */
+    background-color: #00ff00;
+
+    /* hsl hue degree saturation percentage lightness percentage */
+    /* o deg --> red 100% --> no greyness 50% --> normal color 0% black 100% white  */
+    background-color: hsl(0deg,100%, 50%);
+
+}

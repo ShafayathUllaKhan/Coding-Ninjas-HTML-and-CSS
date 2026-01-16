@@ -1,0 +1,62 @@
+h2{
+    color: blueviolet;
+}
+
+p{
+    color: darkcyan;
+}
+
+/* class selector */
+.desc_res{
+    color: cornflowerblue;
+}
+
+/* id selector */
+#top{
+    color: cadetblue;
+    font-size: 50px;
+}
+
+li{
+    color: crimson;
+}
+
+#des1{
+    color: black;
+}
+
+li{
+    color: blueviolet;
+}
+
+/* cascading */
+
+/* means overalaping li of top li */
+
+/* id > class > type */
+
+/* element.style is used to check any element does not change any code it is just for testing */
+
+p{
+    /* used for uppercase and lower case */
+    text-transform: uppercase; 
+    /* center left right  */
+    text-align: center;
+    /* spaces between letters */
+    letter-spacing: 2px;
+
+    /* shadow x axis y axis 4 px */
+    text-shadow: 2px 3px 4px red;
+
+    /* make text look like newspaper */
+    font-family: 'Courier New', Courier, monospace;
+
+    /* makes text more bolder or lighter */
+    font-weight: 900;
+
+    /* units */
+    /* Absolute unit = px (means size is fixed) or cm or inches are absolute units */
+    /* and relative length units = % em rem vw vh  */
+    /* 1 px = 1/96 th part of an inch */
+}
+
