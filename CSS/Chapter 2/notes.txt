@@ -1,0 +1,177 @@
+combinator
+1.descendant selector
+header inside all a tag
+header a{
+
+}
+
+2. child combinator
+a tag should be only direct children not in any nav inside a tag
+
+header > a{
+
+}
+
+3. Next-Sibling combinator
+<section>
+h1
+p
+img
+p
+</section>
+
+h1 + p{
+    only p tag will get styled not after img p tag
+}
+
+4. subsequent sibling combinator
+
+h1 ~ p{
+    all p tag after h1 will get styled after img tag also
+}
+
+
+selectors
+
+1. type selectors
+2. class selectors
+3. ID selectors
+4. universal selectors
+5. attribute selectors
+
+4. universal selectors
+*{
+    styled all the document
+}
+
+5. attribute selectors
+
+a[title] {
+    only a tag which has title attribute will be styled
+}
+
+a[title = "#act"] {
+    only a tag which has title attribute will be styled
+}
+
+a[title *= "act"] {
+    * skip / or # and just check the string
+}
+
+a[title ^= "act"] {
+    ^ this is like prefix skip # or / from start
+}
+
+a[title $= "act"] {
+    $ this is like prefix skip # or / from end
+}
+
+a[title ^="https"][title $= "codingninjas"]{
+    styles https with beginning and ends with codingninjas
+}
+
+pseudo clases 
+
+p :pseudo class
+
+first-child
+last-child
+only-child
+nth-element
+
+<section>
+<P>
+-
+-
+<p>
+</section>
+
+p:first-child{
+    only first child be styled which should be p tag and not only in section tag in all tag first p tag will be styled
+}
+
+p:last-child{
+    only last child be styled which should be p tag and not only in section tag in all tag first p tag will be styled
+}
+
+p:only-child{
+    only child be styled which should be p tag and not only in section tag in all tag first p tag will be styled
+}
+
+n is o then 1 then 2 like indexing
+
+p:nth-child(n+2){
+    any p tag which is second child will get sytle and continous style the p tag till the parents end
+}
+
+p:active{
+    color:green;
+    p tag content will be green
+}
+
+input:active{
+    background-color: green;
+    input tag will be green when clicked
+}
+
+a:link{
+    color: black;
+    a tag will be in black 
+}
+
+h2:hover{
+    color:blue;
+}
+
+a:visited{
+    color: green;
+    a tag will be green after click visit work on links
+}
+
+valid and invalid it will work on forms and input
+
+input:invalid{
+    background-color: pink;
+    border: 1px solid red;
+    works if data is wrong then color will be pink
+}
+
+h2::after{
+    content:"->";
+    all h2 statement after arrow will be printed
+    window+; will give emoji window
+}
+
+a::after{
+    content:attr(href);
+    after a content href link will be printed
+}
+
+p::first-line{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+p::firt-latter{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+input::placeholder{
+    can style placeholder
+}
+
+multiple class
+
+.size{
+    font-size: 25px;
+}
+
+.input-color{
+    color: brown;
+}
+
+<p class="size input-color">
+
+both class style will be implement on p tag
+

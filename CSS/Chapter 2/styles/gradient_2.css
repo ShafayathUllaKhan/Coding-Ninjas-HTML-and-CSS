@@ -1,0 +1,84 @@
+div{
+    text-align: center;
+}
+
+div > div{
+    width: 200px;
+    height: 280px;
+    display: inline-block;
+    background-color: yellow;
+}
+
+div#linear > div:first-of-type{
+    background: linear-gradient(red,blue);
+}
+
+div#linear > div:nth-of-type(2){
+    background: linear-gradient(to right, red , blue);
+}
+
+
+div#linear > div:last-of-type{
+    background: linear-gradient(to top right, red , blue);
+}
+
+
+/* notes 
+
+background: linear-gradient(red,blue);
+horizoltal direction 
+
+background: linear-gradient(to right, red , blue);
+vertical direction
+
+background: linear-gradient(to top right, red , blue);
+sliding direction
+
+background: linear-gradient(125deg, red , blue);
+sliding direction
+
+background: linear-gradient(red 50%,blue);
+horizoltal direction and 50% is the color coming percent on screen
+*/
+
+
+div#radial > div:first-of-type{
+    background: radial-gradient(red,blue,green);
+    background: radial-gradient(circle at 0%, red,blue,green);
+    /* circle at the starting from left */
+    background: radial-gradient(ellipse at 0%, red,blue,green);
+    /* ellipse at the starting from left */
+
+
+}
+
+div#radial > div:nth-of-type(2){
+    background: radial-gradient(closest-side,red , blue,green);
+    background: radial-gradient(closest-side at 40px 40px ,red , blue,green);
+
+}
+
+
+div#radial > div:last-of-type{
+    background: radial-gradient(farthest-side at 40px 40px, red , blue,green);
+}
+
+
+
+/* conic */
+
+
+
+div#conic > div:first-of-type{
+    background: conic-gradient(red,blue,green);
+}
+
+div#conic > div:nth-of-type(2){
+    background: conic-gradient(from 45deg,red , blue,green);
+}
+
+
+div#conic > div:last-of-type{
+    background: conic-gradient(from 90deg at 0 0,red , blue,green);
+    background: conic-gradient(from 30deg at 0 0,red , blue,green);
+}
