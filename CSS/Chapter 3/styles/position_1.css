@@ -1,0 +1,79 @@
+header {
+  background-color: rgb(246, 154, 34);
+  color: white;
+  text-align: center;
+  /* position: relative;
+  top: 10px;
+  left:20px; */
+  /* 10px is is called offset relative and absolute the space will not be there in absolute
+  and absolute come up on the content and just take space on content length 
+  absolute = relatively place to the nearest containing block bottom is viewport defaault and any relative paent the bottom and top will adjust on that realtive element and aboslute will not respect the size the more you put content it will expand on the data 
+
+  fixed = offset is view port  
+  sticky = is combination of relative and fixed 
+  position : sticky;
+  top: 10px;
+  10px of viewport it follows view port 
+  */
+}
+
+html, body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+section {
+  display: inline-block;
+  width: 75%;
+  text-align: justify;
+}
+main {
+  border: 2px red solid;
+}
+
+.main-heading {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.sub-heads {
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+aside {
+  display: inline-block;
+  width: 24%;
+  background-color: rgb(124, 122, 123);
+  vertical-align: top;
+}
+
+
+body{
+  position: relative;
+}
+
+#overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0,0.6);
+}
+
+#pop-up{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background-color: azure;
+  top: 40%;
+  left: 30%;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 200px;
+}

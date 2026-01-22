@@ -1,0 +1,14 @@
+div {
+  display: inline-block;
+  border: 1px dotted black;
+}
+
+.horizontal {
+ writing-mode: horizontal-tb;
+ /* horizontal-tb is default  */
+}
+
+.vertical {
+  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
+}

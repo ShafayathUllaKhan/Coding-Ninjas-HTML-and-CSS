@@ -1,0 +1,108 @@
+position
+
+1.static
+2.relative
+3.absolute
+4.fixed
+5.sticky
+
+Ahhh 👍 this is a very good doubt — and it’s a classic CSS confusion. Let’s clear it cleanly and precisely.
+
+Short answer (core idea)
+
+height: 100% only works if the parent has a defined height
+
+So:
+
+body { height: 100% } ❌ alone is NOT enough
+
+html, body { height: 100% } ✅ works
+
+Now the WHY (important part)
+🔹 CSS height is relative to the parent
+
+When you write:
+
+body {
+  height: 100%;
+}
+
+
+CSS asks:
+
+“100% of what?”
+
+👉 The parent of body is html
+
+But by default:
+
+html {
+  height: auto;  /* content-based */
+}
+
+
+So CSS cannot calculate 100%.
+
+❌ Result: body height collapses to content height only.
+
+Why this works ✅
+html, body {
+  height: 100%;
+}
+
+What happens now:
+
+html → gets 100% of viewport
+
+body → gets 100% of html
+
+Now absolute children can correctly use height: 100%
+
+✔ Chain is complete
+✔ Browser can calculate height
+
+Why position: relative does NOT help
+body {
+  position: relative;
+  height: 100%;
+}
+
+
+❗ position: relative does NOT define height
+It only changes how top/left and absolute children behave.
+
+So browser still sees:
+
+body height = 100% of html
+html height = auto ❌
+
+
+Hence → fails
+
+Think of it like a ladder 🪜
+viewport
+  ↓
+html (must have height)
+  ↓
+body (100% of html)
+  ↓
+#overlay (100% of body)
+
+
+If any rung is missing, the ladder breaks.
+
+Interview-level one-liner 🧠
+
+height: 100% works only when every parent up the tree has a defined height.
+
+BONUS TIP (real projects)
+
+Most devs avoid this entirely and just do:
+
+#overlay {
+  position: fixed;
+  inset: 0;
+}
+
+
+No height chain. No headache. 😄

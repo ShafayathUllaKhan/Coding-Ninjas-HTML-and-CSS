@@ -1,0 +1,11 @@
+#box {
+  width: 200px;
+  height: 200px;
+  background-color: lightsalmon;
+  float: right;
+  /* none is default , left , right, inline-start,inline-end, */
+}
+
+img {
+  float: inline-start;
+}
