@@ -1,0 +1,7 @@
+row
+gutter
+columns
+grid line
+grid cell -- grid box
+track -- full row
+grid area --  more than 1 cell 

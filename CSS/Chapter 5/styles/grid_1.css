@@ -1,0 +1,65 @@
+.box{
+    background-color: lightgreen;
+    border: 1px dotted green;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#container{
+    display: grid;
+    border: 2px solid blue;
+    width: 80vw;
+    height: 90vh;
+    /* grid-template-columns: 200px 200px 200px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* fractions (fr) 200px will not be responsive fr will be responsive */
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-template-columns: repeat(3,1fr); = grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: auto auto auto; */
+    /* auto will take text space and then give space to other columns fr is fixed  */
+    grid-auto-rows: 50px;
+    /* row hight property */
+
+   grid-auto-rows: minmax(50px,100px);
+   /* minimum width and maximum auto */
+
+   row-gap: 10px;
+   column-gap: 20px;
+
+   gap: 10px 20px;
+   /* row gap and column gap first is row second is column */
+
+   justify-items: end;
+   /* strech is default */
+
+   align-items: center;
+   /* works vertical */
+
+    place-content: center;
+    /* justify-content  and align-content first is justify-content second is align-content */
+
+    /* justify-content is same as flex */
+
+    /* align-content will work vertical */
+
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+
+#box1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#box2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#box5{
+    grid-column: 2/4;
+    /* short hand 
+    grid-column-start: 2;
+    grid-column-end: 4; */
+
+    grid-column: 2/ span 2;
+}

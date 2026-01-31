@@ -1,0 +1,73 @@
+#container {
+  border: 2px solid black;
+  display: flex;
+  /* row,column,row-reverse,column-reverse */
+  flex-direction: row;
+  /* flex-start,flex-end,center,space-between,space-around,space-evenly */
+  /* flext-start will not change anything why because it starts arranging from start */
+  justify-content: flex-start;
+  /* flex wrap is used to adjust elements within the container default value no wrap and values wrap,wrap-reverse */
+  flex-wrap: no-wrap;
+
+  /* align content works on cross axis and justify content works on main axis and values are flex-start,streach  and takes out space and works good on multiple rows and streach if you dont give any value or auto to height or width it will streach  */
+  align-content: flex-start;
+
+  /* align items  works on cross axis and does not have values like space-around it uses flex-start,flex-end,center,baseline and baseline is like text is on the same line of all element*/
+  align-items: flex-start;
+  width: 500px;
+  height: 100vh;
+
+  /* give gap on columns and rows */
+  column-gap: 10px;
+  row-gap: 120px;
+
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2em;
+}
+
+#box1 {
+  background-color: lightcoral;
+  /* order is 0 default and arranged in asc but if you increase the order then according to order the blocks will arrange and you can give -1 or negative values  */
+  order: 1;
+
+  /* for width 0 means take the size of content  */
+  flex-basis: 200px;
+
+  /* shorthand 
+  flex-flow: row wrap-reverse;
+  flex: grow shrink basis; */
+}
+
+#box2 {
+  background-color: lightgreen;
+  /* moves vertically */
+  align-self: center;
+
+  /* grows horizontal */
+  flex-grow: 1;
+
+  /* shrink 1 is default and if grow it grows or shrink it shrink */
+  flex-shrink: 2;
+}
+
+#box3 {
+  background-color: lightskyblue;
+}
+
+#box4 {
+  background-color: lightpink;
+}
+
+
+/* flex
+flex-direction: row or colum main axis or cross-axis 
+
+if flex is column then main axis will be vertical and cross-axis will be horizontal
+
+*/
