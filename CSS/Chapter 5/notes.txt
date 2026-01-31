@@ -5,3 +5,35 @@ grid line
 grid cell -- grid box
 track -- full row
 grid area --  more than 1 cell 
+
+
+/* Grid Container Properties */
+    display: ;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    grid-auto-rows: ;
+    grid-auto-columns: ;
+    grid-auto-flow: ;
+    column-gap: ;
+    row-gap: ;
+    gap: ;
+    justify-items: ;
+    align-items: ;
+    place-items: ;
+    justify-content: ;
+    align-content: ;
+    place-content: ;
+    grid-template-areas: ;
+
+/* Grid Item's Properties */
+
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-column: ;
+    grid-row-start: ;
+    grid-row-end: ;
+    grid-row: ;
+    grid-area: ;
+    justify-self: ;
+    align-self: ;
+    place-self: ;
